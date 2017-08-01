@@ -3,7 +3,7 @@ pipeline {
   stages {
     stage('error') {
       steps {
-        bat '2.bat'
+        powershell(script: 'step1.ps1"', returnStatus: true)
       }
     }
   }
