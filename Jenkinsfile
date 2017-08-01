@@ -8,7 +8,16 @@ pipeline {
     }
     stage('Umzip') {
       steps {
-        bat '1.bat'
+        parallel(
+          "Umzip": {
+            bat '1.bat'
+            
+          },
+          "": {
+            bat '2.bat'
+            
+          }
+        )
       }
     }
   }
