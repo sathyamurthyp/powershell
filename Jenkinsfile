@@ -3,7 +3,7 @@ pipeline {
   stages {
     stage('error') {
       steps {
-        bat '11.bat'
+        bat '1.bat'
       }
     }
   }
