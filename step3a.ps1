@@ -1,0 +1,1 @@
+Import-Csv D:\CODE\Jenkins\copy.txt -Delimiter ',' -Header Path,Destination | Copy-Item

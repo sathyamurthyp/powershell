@@ -1,0 +1,1 @@
+Expand-Archive D:\CODE\Jenkins\files.zip -DestinationPath D:\CODE\Jenkins\files
