@@ -1,9 +1,9 @@
 pipeline {
   agent any
   stages {
-    stage('') {
+    stage('error') {
       steps {
-        bat '1.bat'
+        bat '2.bat'
       }
     }
   }
