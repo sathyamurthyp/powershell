@@ -3,7 +3,7 @@ pipeline {
   stages {
     stage('Git') {
       steps {
-        git(url: 'https://github.com/sathyamurthyp/powershell/', branch: 'master', poll: true)
+        git(url: 'https://github.com/sathyamurthyp/powershell.git', branch: 'master', poll: true)
       }
     }
     stage('Unzip') {
