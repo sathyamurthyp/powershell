@@ -6,7 +6,7 @@ pipeline {
         git(url: 'https://github.com/sathyamurthyp/powershell/', branch: 'master', poll: true)
       }
     }
-    stage('Umzip') {
+    stage('Unzip') {
       steps {
         parallel(
           "Unzip": {
