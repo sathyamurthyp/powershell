@@ -9,11 +9,11 @@ pipeline {
     stage('Umzip') {
       steps {
         parallel(
-          "Umzip": {
+          "Unzip": {
             bat '1.bat'
             
           },
-          "": {
+          "error": {
             bat '2.bat'
             
           }
